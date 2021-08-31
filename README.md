@@ -1,5 +1,5 @@
 # Aulas de PHP
-Projeto Site Pessoal desenvolvido em PHP nas aulas de Programação Web 2
+Projeto desenvolvido em PHP nas aulas de Programação Web 2
 
 ### Etec João Maria Stevanatto - Itapira/SP
 Curso: ETIM Desenvolvimento de Sistema - 1ºC (2021)
