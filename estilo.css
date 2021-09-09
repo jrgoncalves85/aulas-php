@@ -1,0 +1,100 @@
+/*
+ * Folha de estilo para o Projeto Modelo de Site Pessoal
+ */
+
+ /* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: verdana;
+    font-size: 12px;
+}
+h1{
+    color: #BB0022;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+}
+#topo{
+    background-color: #EEE;
+    width: 980px;
+    height: 80px;
+}
+#topo p {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+#menu{
+    background-color: #777;
+    width: 980px;
+    height: 40px;
+}
+#menu ul{
+    text-transform: uppercase;
+    list-style-type: none;
+}
+#menu ul li{
+    float: left;
+}
+#menu ul li a{
+    font-style: 18px;
+    width: 195px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: #777;
+    background-color: #FFF;
+}
+#destaques{
+    background-color: #555;
+    width: 980px;
+    height: 320px;
+    padding-top: 5px;
+}
+#destaques{
+    background-color: #555;
+    width: 980px;
+    height: 320px;
+    padding-top: 5px;
+}
+.foto{
+    padding: 5px;
+    border: 2px solid #FFF;
+}
+#bio{
+    background-color: #FFF;
+    width: 980px;
+    height: 170px;
+}
+#bio p{
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+#rodape{
+    background-color: #777;
+    width: 980px;
+    height: 40px;
+}
+#rodape p{
+    text-align: center;
+    padding-top: 10px;
+}
+#tudo{
+    width: 980px;
+    border: 1px solid #555;
+    margin: auto; 
+}
+
+
+#conteudo{
+    width: 980px;
+    height: 520px;
+    padding-top: 5px;
+}
