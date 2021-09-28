@@ -1,5 +1,5 @@
-# Aulas de PHP
-Projeto desenvolvido em PHP nas aulas de Programação Web 2
+# Projeto Site Pessoal
+Projeto Site Pessoal desenvolvido em HTML e CSS nas aulas de Programação Web
 
 ### Etec João Maria Stevanatto - Itapira/SP
 Curso: ETIM Desenvolvimento de Sistema - 1ºC (2021)
@@ -8,8 +8,6 @@ Curso: ETIM Desenvolvimento de Sistema - 1ºC (2021)
 [Hiperbytes](https://hiperbytes.com.br/)
 
 ### Tecnologias utilizadas 
-* HTML
-* CSS
-* PHP
-* MySQL
-* Bootstrap
+* HTML5
+* CSS3
+* javascript

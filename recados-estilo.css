@@ -1,0 +1,31 @@
+label {
+    height: 20px;
+    margin: 10px 0;
+}
+select{
+    height: 20px;
+    margin: 10px;  
+}
+textarea{
+    width: 415px;
+    margin: 10px 0;
+}
+input[type=text]{
+    width: 350px;
+    height: 20px;
+    margin: 10px;
+}
+.form-submit-button {
+    padding: 10px 15px; 
+    background:#016ABC;
+    color:#fff;
+    border:0 none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.form-submit-button:hover {
+    padding: 10px 15px;
+    background:#00477e;
+    color:#fff;
+    border-radius:5px;
+}

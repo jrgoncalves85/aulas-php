@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="recados-estilo.css">
 
 	<script type="text/javascript">
 		function validaCampo()
@@ -37,44 +38,40 @@
     <div id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Pessoal</a></li>
-            <li><a href="#">Acadêmico</a></li>
-            <li><a href="#">Profissional</a></li>
-            <li><a href="#">Recados</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="profissional.html">Profissional</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="recados.html">Recados</a></li>
         </ul>
     </div>
 	<div id="conteudo">
-		<h3>Deixe aqui seu comentário</h3>   
-		<form id="recado" name="recado" action="recado-enviar.php" method="POST" onsubmit="return validaCampo(); return false;">
+		<h3>Deixe aqui seu recado</h3><br>
+		<form id="recado" name="recado" action="recados-enviar.php" method="POST" onsubmit="return validaCampo(); return false;">
 		   	<div>
-			 	<label for="txtnome">Nome:</label>
-			 	<div>
-			   		<input type="text" name="txtnome">
-			 	</div> 
-		   </div>
-		   <div>
+			 	<label for="txtnome">Nome:</label>			 	
+			   	<input type="text" name="txtnome">
+		   	</div>			
+		   	<div>
 			 	<label for="optturma">Turma:</label>
-			 	<div>
 			   		<select name="optturma">
 				   		<option value="0"> Selecione...</option>
 						<option value="1C"> 1ºC </option>
 						<option value="2C"> 2ºC </option>
 						<option value="3C"> 3ºC </option>
 			   		</select> 
-			 	</div> 
-		   </div>
-		   <div >
-				<label for="txtrecado">Comentário:</label>
-				<div >
-					<textarea name="txtrecado" cols="30" rows="5"></textarea>
-				</div> 
-		   </div>
-		   <div>
+		   	</div>	
+		   	<div>
+				<label for="txtrecado">Mensagem:</label><br>
+				<textarea name="txtrecado" cols="30" rows="5"></textarea>
+		   	</div>
+			<br>
+		   	<div>
 			 	<div>
-				 	<input type="submit" value="Enviar comentário">
+				 	<input type="submit" class="form-submit-button" value="Enviar recado">
 			 	</div>
 		   	</div>
 		</form>
+		<br>
 	</div>				
 	<div id="rodape">
 		<p>Desenvolvido por Júnior Gonçalves - 2021</p>
