@@ -44,33 +44,34 @@
             <li><a href="recados.html">Recados</a></li>
         </ul>
     </div>
-	<div id="recados">
-		<h2>Meus recados</h2>
-		<p><a href="recados-form.html">Clique aqui</a> para deixar o seu recado</p><br>		
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João (2ºC)</h4>
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!! eu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João Pedro (2ºC)</h4>			
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">Ana (2ºC)</h4>
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João (2ºC)</h4>
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!! eu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João Pedro (2ºC)</h4>			
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">Ana (2ºC)</h4>
-			</div>
+	<div id="conteudo">
+		<h3>Deixe aqui seu recado</h3><br>
+		<form id="recado" name="recado" action="recados-enviar.php" method="POST" onsubmit="return validaCampo(); return false;">
+		   	<div>
+			 	<label for="txtnome">Nome:</label>			 	
+			   	<input type="text" name="txtnome">
+		   	</div>			
+		   	<div>
+			 	<label for="optturma">Turma:</label>
+			   		<select name="optturma">
+				   		<option value="0"> Selecione...</option>
+						<option value="1C"> 1ºC </option>
+						<option value="2C"> 2ºC </option>
+						<option value="3C"> 3ºC </option>
+			   		</select> 
+		   	</div>	
+		   	<div>
+				<label for="txtrecado">Mensagem:</label><br>
+				<textarea name="txtrecado" cols="30" rows="5"></textarea>
+		   	</div>
+			<br>
+		   	<div>
+			 	<div>
+				 	<input type="submit" class="form-submit-button" value="Enviar recado">
+			 	</div>
+		   	</div>
+		</form>
+		<br>
 	</div>				
 	<div id="rodape">
 		<p>Desenvolvido por Júnior Gonçalves - 2021</p>

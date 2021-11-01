@@ -107,6 +107,31 @@ p{
     background: #fff;
     padding: 30px 32px;
 }
+#recados{
+    width: 912px;
+    border-left: 2px solid #69152D;
+    border-right: 2px solid #69152D;
+    background: #fff;
+    padding: 30px 32px;
+    height: 460px;
+}
+.balao {
+    width: 300px;
+    float: left;
+    text-align: center;
+    background-image: url("imagens/balao.jpg");
+    background-size: 290px;
+    background-repeat: no-repeat;
+    height: 180px;
+    padding: 15px 2px;
+}
+.recado{
+    margin: 5px 20px;
+}
+.nome {
+    margin-left: 170px;
+    margin-top: 90px;
+}
 #bio{
 	background: #efefa6;
 	border: 1px solid #69152D;
