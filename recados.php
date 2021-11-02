@@ -1,3 +1,9 @@
+<?php
+$sql = "SELECT * FROM recados";
+$conexao = new PDO('mysql:host=127.0.0.1;dbname=pessoal','root','');
+$resultado = $conexao->query($sql);
+$lista = $resultado->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -47,30 +53,12 @@
 	<div id="recados">
 		<h2>Meus recados</h2>
 		<p><a href="recados-form.html">Clique aqui</a> para deixar o seu recado</p><br>		
+        <?php foreach ($lista as $linha): ?>
 			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João (2ºC)</h4>
+				<p class="recado"><?php echo $linha['recado'] ?></p>			
+				<h4 class="nome"><?php echo $linha['nome'] ?> - <?php echo $linha['turma'] ?></h4>
 			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!! eu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João Pedro (2ºC)</h4>			
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">Ana (2ºC)</h4>
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João (2ºC)</h4>
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!! eu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">João Pedro (2ºC)</h4>			
-			</div>
-			<div class="balao">
-				<p class="recado">Seu sites está muito legal Júnior. Parabéns!!!!</p>			
-				<h4 class="nome">Ana (2ºC)</h4>
-			</div>
+        <?php endforeach ?>
 	</div>				
 	<div id="rodape">
 		<p>Desenvolvido por Júnior Gonçalves - 2021</p>
